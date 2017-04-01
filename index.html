@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.selectBox.min.js" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header class="header">
+		<a class="toggle-menu" href="javascript:void(0)"><span class="toggle-menu__img"></span></a>
+		<ul class="main-menu">
+			<li class="main-menu__item" data-scroll="section-info">
+				<a class="main-menu__link" href="javascript:void(0)">Личная информация</a>
+			</li>
+			<li class="main-menu__item" data-scroll="section-experience">
+				<a class="main-menu__link" href="javascript:void(0)">Опыт</a>
+			</li>
+			<li class="main-menu__item" data-scroll="section-js">
+				<a class="main-menu__link" href="javascript:void(0)">JavaScript</a>
+			</li>
+			<li class="main-menu__item" data-scroll="section-about">
+				<a class="main-menu__link" href="javascript:void(0)">О себе</a>
+			</li>
+		</ul>
+	</header>
+	<div class="content">
+		<h1 class="content__main-title">Анкета</h1>
+		<section class="section section-info">
+			<div class='section__icon'></div>
+			<h3 class="section__title">Личная информация</h3>
+			<form action="" class="form">
+				<div class="form__input-wrapper">
+					<input class="form__item" type="text">
+					<label for="" class="form__label">ФИО</label>
+				</div>
+				<select class="form__select">
+					<option value="1989">Год рождения</option>
+					<option value="1989">1989</option>
+					<option value="1990">1990</option>
+					<option value="1991">1991</option>
+					<option value="1992">1992</option>
+					<option value="1993">1993</option>
+				</select>
+				<div class="form__input-wrapper">
+					<input class="form__item" type="text">
+					<label for="" class="form__label">Место проживания</label>
+				</div>
+				<div class="form__input-wrapper">
+					<input class="form__item" type="text">
+					<label for="" class="form__label">Skype</label>
+				</div>
+				<div class="form__input-wrapper">
+					<input class="form__item" type="text">
+					<label for="" class="form__label">E-mail</label>
+				</div>
+			</form>
+		</section>
+		<section class="section section-experience">
+			<div class='section__icon'></div>
+			<h3 class="section__title">Расскажите о своем опыте</h3>
+			<form action="" class="form form-check">
+				<div class="form-check__wrapper">
+					<input type="checkbox" class="form__check" id="bem">
+					<label for="bem" class="form__label-check">БЭМ/OOCSS</label>
+					<input type="checkbox" class="form__check" id="less">
+					<label for="less" class="form__label-check">Stylus/LESS/SASS</label>
+					<input type="checkbox" class="form__check" id="svg">
+					<label for="svg" class="form__label-check">Работаю с SVG</label>
+				</div>
+				<div class="form-check__wrapper">
+					<input type="checkbox" class="form__check" id="sem">
+					<label for="sem" class="form__label-check">Верстаю семантично</label>
+					<input type="checkbox" class="form__check" id="es">
+					<label for="es" class="form__label-check">ES2015/ES2016</label>
+					<input type="checkbox" class="form__check" id="gulp">
+					<label for="gulp" class="form__label-check">Gulp/GRUNT</label>
+				</div>
+				<div class="form-check__wrapper">
+					<input type="checkbox" class="form__check" id="wb">
+					<label for="wb" class="form__label-check">Webpack</label>
+					<input type="checkbox" class="form__check" id="jq">
+					<label for="jq" class="form__label-check">jQuery</label>
+					<input type="checkbox" class="form__check" id="git">
+					<label for="git" class="form__label-check">Ипользую Git</label>
+				</div>
+			</form>
+		</section>
+		<section class="section section-js">
+			<div class='section__icon'></div>
+			<h3 class="section__title">Уровень владения JavaScript</h3>
+			<ul class="runner">
+				<li class="runner__item runner__item_1">Не владею</li>
+				<li class="runner__item runner__item_2">Использую готовые<br>решения</li>
+				<li class="runner__item runner__item_3">Использую готовые решения<br>и умею и переделывать</li>
+				<li class="runner__item runner__item_4">Пишу сложный JS с нуля</li>
+			</ul>
+			<div class="runner-img">
+				<div class="runner-img__bg">
+					<div class="runner-img__cursor"></div>
+				</div>
+			</div>
+			<!-- <ul class="runner runner_img">
+				<li class="runner__item runner__item_1"></li>
+				<li class="runner__item runner__item_2"></li>
+				<li class="runner__item runner__item_3"></li>
+				<li class="runner__item runner__item_4"></li>
+			</ul> -->
+		</section>
+		<section class="section section-about">
+			<div class='section__icon'></div>
+			<h3 class="section__title">Расскажите о себе</h3>
+			<div class="section__descr">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+			<textarea class="section__textarea" name="" placeholder="Понравилась тем, что..."></textarea>
+		</section>
+		<a href="javascript:void(0)" class="main-button">Готово</a>
+	</div>
+</body>
+</html>
